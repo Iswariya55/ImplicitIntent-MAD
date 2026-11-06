@@ -10,7 +10,21 @@ To create a navigate button using Implicit Intent to display the gmail page usin
 Latest Version Android Studio
 
 ## ALGORITHM:
+Start the project: Create a new Android project in Android Studio.
 
+Design the UI: In activity_main.xml, add an EditText (to accept the URL input) and a Button (to trigger the navigation).
+
+Initialize components: In MainActivity.java, map the EditText and Button variables to their respective XML IDs using findViewById().
+
+Set click listener: Attach an OnClickListener to the button to listen for user click events.
+
+Get input: Inside the onClick method, extract the text entered in the EditText and convert it to a string.
+
+Create implicit intent: Instantiate an Intent with the action Intent.ACTION_VIEW and pass the parsed URL string using Uri.parse().
+
+Start activity: Call startActivity(intent) to trigger the OS to open the webpage in an available web browser.
+
+Stop: Run and test the application.
 
 
 ## PROGRAM:
